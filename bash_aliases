@@ -25,10 +25,4 @@ alias ip='ipython'
 alias p='python'
 alias python='python2.7'
 
-# Make grep more user friendly by highlighting matches
-# and exclude grepping through .svn folders.
-#alias grep='grep --color=auto --exclude-dir=\.svn'
- 
-# Shortcut for using the Kdiff3 tool for svn diffs.
-#alias svnkdiff3='svn diff --diff-cmd kdiff3'
-
+alias uzp='tar -zxvf'

@@ -211,3 +211,19 @@ la
 ll
 cd dotfiles_linux/
 git .
+git add .
+ll
+git status
+git commit -m 'dotfiles'
+got push
+git push
+la
+python
+ll
+git clone https://github.com/bazelbuild/bazel.git
+vim ~/.bash_aliases 
+vim ~/.vimrc 
+cd dotfiles_linux/
+ll
+git add .
+git status

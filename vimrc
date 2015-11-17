@@ -133,6 +133,7 @@ let g:NERDTreeDirArrows=0
 
 " Allow quit 
 map , :x<CR>
+map . :wq<CR>
 nnoremap <leader>, :xa<cr>
 
 " Toggle line numbers
