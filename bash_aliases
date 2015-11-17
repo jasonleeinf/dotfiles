@@ -11,10 +11,12 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias w="cd ~/workspace"
 
+alias sc="source"
+
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
-alias ll='ls -lFG'
-alias la='ls -alFG'
-alias ls='ls -F'
+alias ll='ls -lF --color=always'
+alias la='ls -alF --color=always'
+alias ls='ls -F --color=always'
 
 alias mli='matlab -nodesktop'
 alias mls='matlab -nodisplay -nojvm -nosplash -nodesktop -r'

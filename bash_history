@@ -177,3 +177,37 @@ l
 la
 cd dotfiles_linux/
 la
+git add .
+git status
+git commit -m "dotfiles"
+git push
+cd
+la
+rm -rf dotfiles
+la
+vim ~/.bashrc 
+source ~/.bashrc 
+ll
+la
+vim ~/.bashrc 
+ls -lah --colors=auto
+man ls
+ls -lah --colors
+ls -lah --color
+ls -lah --color=auto
+vim ~/.bash_aliases 
+source ~/.bash_aliases 
+la
+vim ~/.bashrc 
+sc
+src
+vim ~/.bash_aliases 
+source ~/.bash_aliases 
+sc ~/.bashrc 
+la
+vim ~/.bashrc 
+sc ~/.bashrc 
+la
+ll
+cd dotfiles_linux/
+git .
