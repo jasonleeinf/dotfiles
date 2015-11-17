@@ -1,10 +1,6 @@
 # Add some more custom software to PATH.
 PATH=$PATH:"$HOME/usr/bin"
-PATH=$PATH:/cluster/home04/infk/leeyu/jdk1.8.0_66/bin
-PATH=$PATH:~/usr/bin:/Applications/MATLAB_R2015a.app/bin
-PATH=$PATH:/Users/jasonlee/bazel-0.1.1/output
-PATH=$PATH:/Users/jasonlee/srilm/lm/bin/macosx
-PATH=$PATH:/Users/jasonlee/miniconda2/bin
+PATH=$PATH:$HOME/jdk1.8.0_66/bin
 export PATH
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:~/usr/local/lib/pkgconfig
