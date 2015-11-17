@@ -1,0 +1,10 @@
+#!/bin/bash
+
+array=("bash_aliases" "bash_history" "bash_profile" "bashrc" "profile" "screenrc" "vimrc")
+
+for i in "${array[@]}"
+do
+    ln -sf ~/dotfiles/$i ~/.$i
+done
+
+ln -sf ~/dotfiles/sshconfig ~/.ssh/config

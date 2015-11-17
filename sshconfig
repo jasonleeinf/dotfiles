@@ -1,0 +1,9 @@
+# contents of $HOME/.ssh/config
+Host bru
+    HostName brutus.ethz.ch 
+    User leeyu
+
+Host eul 
+    HostName euler.ethz.ch 
+    User leeyu
+
