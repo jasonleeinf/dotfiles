@@ -168,3 +168,12 @@ for f in dotfiles/*; do echo $f; done
 cd dotfiles
 for f in *; do echo $f; done
 for f in *; cp $f ~/dotfiles_linux/$f; done
+./createlinks 
+cd 
+la
+la ~/.ssh/
+ll
+l
+la
+cd dotfiles_linux/
+la

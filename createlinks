@@ -4,7 +4,7 @@ array=("bash_aliases" "bash_history" "bash_profile" "bashrc" "profile" "screenrc
 
 for i in "${array[@]}"
 do
-    ln -sf ~/dotfiles/$i ~/.$i
+    ln -sf ~/dotfiles_linux/$i ~/.$i
 done
 
-ln -sf ~/dotfiles/sshconfig ~/.ssh/config
+ln -sf ~/dotfiles_linux/sshconfig ~/.ssh/config
