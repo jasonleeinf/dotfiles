@@ -6,12 +6,10 @@ PATH=$PATH:/Users/jasonlee/bazel-0.1.1/output
 PATH=$PATH:/Users/jasonlee/srilm/lm/bin/macosx
 PATH=$PATH:/Users/jasonlee/miniconda2/bin
 export PATH
- 
-# Make sure pkg-config can find self-compiled software
-# and libraries (installed to ~/usr)
-#PKG_CONFIG_PATH=$PKG_CONFIG_PATH:~/usr/lib/pkgconfig
-# export PKG_CONFIG_PATH
- 
+
+PKG_CONFIG_PATH=$PKG_CONFIG_PATH:~/usr/local/lib/pkgconfig
+export PKG_CONFIG_PATH
+
 # Add custom compiled libraries to library search path.
 # LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/usr/lib
 # export LD_LIBRARY_PATH
@@ -24,7 +22,8 @@ export PATH
 PYTHONPATH=$PYTHONPATH:/Users/jasonlee/Theano
 export PYTHONPATH
  
-# Java;s CLASSPATH customization
+# Java's CLASSPATH customization
 # CLASSPATH=$CLASSPATH:~/foo/bar.jar
 # export CLASSPATH
-
+JAVA_HOME=$JAVA_HOME:~/jdk1.8.0_66/bin/java
+export JAVA_HOME
