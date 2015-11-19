@@ -91,7 +91,9 @@ let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 3
 
-set clipboard=unnamed
+set clipboard+=unnamed
+
+set go+=a
 
 "------------------------------------------------------------
 " Indentation options {{{1

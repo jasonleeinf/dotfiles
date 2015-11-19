@@ -4,7 +4,9 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias scr='cd $SCRATCH'
+
+alias scr='screen -r'
+alias scl='screen -list'
 
 # Shortcuts
 alias d="cd ~/Dropbox"
@@ -13,6 +15,9 @@ alias dt="cd ~/Desktop"
 alias w="cd ~/workspace"
 
 alias sc="source"
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -lF --color=always'
