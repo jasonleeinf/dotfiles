@@ -5,8 +5,8 @@ alias cp='cp -i'
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias scr='screen -r'
-alias scl='screen -list'
+alias sr='screen -r'
+alias sl='screen -list'
 
 # Shortcuts
 alias d="cd ~/Dropbox"
