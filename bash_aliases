@@ -1,7 +1,8 @@
 # Make some possibly destructive commands more interactive.
-alias rm='rm -i'
-alias mv='mv -i'
-alias cp='cp -i'
+alias rm='rm -iv'
+alias rd='rm -irv'
+alias mv='mv -iv'
+alias cp='cp -iv'
 alias ..='cd ..'
 alias ...='cd ../..'
 
