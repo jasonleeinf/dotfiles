@@ -135,6 +135,8 @@ nnoremap <C-L> :nohl <CR> <C-L>
  
 let g:NERDTreeDirArrows=0
 
+let NERDTreeShowHidden=1
+
 " Allow quit 
 map ; :x<CR>
 map ' :wq<CR>

@@ -3,13 +3,6 @@ if [ -f /etc/bash_completion ]; then
     source /etc/bash_completion
 fi
  
-# Set the PS1 prompt (with colors).
-# Based on http://www-128.ibm.com/developerworks/linux/library/l-tip-prompt/
-# And http://networking.ringofsaturn.com/Unix/Bash-prompts.php .
-#PS1="\[\e[36;1m\]\h:\[\e[32;1m\]\w$ \[\e[0m\]"
-PS1='\[\e[1;31m\]\h\[\e[m\] \[\e[1;32m\]\u\[\e[m\] \[\e[1;34m\]\W\[\e[m\] \[\e[1;33m\]\$\[\e[m\] \[\e[0;37m\]'
-export PS1;
- 
 # Set the default editor to vim.
 export EDITOR=vim
  
@@ -28,7 +21,3 @@ PROMPT_COMMAND='history -a'
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
-
-export CLICOLOR=1
-#export LSCOLORS=gxfxcxdxbxegedabagacad
-export LS_COLORS='di=0;36:ln=0;35:'

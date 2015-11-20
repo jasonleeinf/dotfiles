@@ -1,9 +1,31 @@
 # contents of $HOME/.ssh/config
-Host bru
+Host br
     HostName brutus.ethz.ch 
     User leeyu
+    ForwardX11 yes
 
-Host eul 
+Host br1
+    HostName brutus1.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+
+Host br2
+    HostName brutus2.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+
+Host br3
+    HostName brutus3.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+
+Host br4
+    HostName brutus4.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+
+Host eu 
     HostName euler.ethz.ch 
     User leeyu
+    ForwardX11 yes
 
