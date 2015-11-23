@@ -91,7 +91,10 @@ let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplcache_min_syntax_length = 3
 
-set clipboard+=unnamed
+if has('unnamedplus')
+    set clipboard=unnamed,unnamedplus
+endif
+
 
 set go+=a
 
@@ -212,6 +215,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'ahw/vim-pbcopy'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

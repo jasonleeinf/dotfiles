@@ -3,29 +3,35 @@ Host br
     HostName brutus.ethz.ch 
     User leeyu
     ForwardX11 yes
+    ForwardX11Trusted yes
 
 Host br1
     HostName brutus1.ethz.ch 
     User leeyu
     ForwardX11 yes
+    ForwardX11Trusted yes
 
 Host br2
     HostName brutus2.ethz.ch 
     User leeyu
     ForwardX11 yes
+    ForwardX11Trusted yes
 
 Host br3
     HostName brutus3.ethz.ch 
     User leeyu
     ForwardX11 yes
+    ForwardX11Trusted yes
 
 Host br4
     HostName brutus4.ethz.ch 
     User leeyu
     ForwardX11 yes
+    ForwardX11Trusted yes
 
 Host eu 
     HostName euler.ethz.ch 
     User leeyu
     ForwardX11 yes
+    ForwardX11Trusted yes
 
