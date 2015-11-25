@@ -150,6 +150,10 @@ map - dd
  
 let g:indentLine_char = ' '
 
+let g:LargeFile=10
+
+:set shortmess=a
+
 " Enable 256 colours
 set t_Co=256
 
