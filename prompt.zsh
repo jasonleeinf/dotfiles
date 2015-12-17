@@ -2,7 +2,7 @@
 
 setopt prompt_subst
 
-PROMPT="${fg_lred}%m ${fg_lgreen}%n ${fg_lblue}%c ${fg_yellow}%{>>%}${at_normal} "
+PROMPT="${fg_lred}%m ${fg_lgreen}%n ${fg_lblue}%c ${fg_yellow}%{>>%} %(?/${at_normal}/${fg_red})%%${at_normal} "
 
 INSERT_PROMPT="gray"
 COMMAND_PROMPT="red"
