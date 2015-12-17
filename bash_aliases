@@ -9,6 +9,9 @@ alias ...='cd ../..'
 alias sr='screen -r'
 alias sl='screen -list'
 
+alias sb='ssh br'
+alias se='ssh eu'
+
 alias sc="source"
 
 alias mli='matlab -nodesktop'
