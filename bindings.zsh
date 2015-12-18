@@ -4,6 +4,8 @@ bindkey -v
 #get rid of esc escape sequence latency
 export KEYTIMEOUT=1
 
+bindkey '^R' history-incremental-search-backward
+
 #ctrl-p ctrl-n history navigation
 bindkey '^P' up-history
 bindkey '^N' down-history
