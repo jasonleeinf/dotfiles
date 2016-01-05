@@ -1,7 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-export LANG=en_US.UTF-8
+export LC_ALL=en_US.utf-8 
+export LANG="$LC_ALL" 
 
 . ~/.zsh/prompt.zsh
 . ~/.zsh/config.zsh
@@ -26,6 +27,3 @@ plugins=(git colored-man-pages colorize cp rsync safe-paste vundle brew)
 [ -e ~/.zsh/custom.zsh ] && . ~/.zsh/custom.zsh
 
 true
-
-
-. /local/home/leeyu/torch/install/bin/torch-activate
