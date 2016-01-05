@@ -92,7 +92,6 @@ if has('unnamedplus')
     set clipboard=unnamed,unnamedplus
 endif
 
-
 set go+=a
 
 "------------------------------------------------------------
@@ -123,8 +122,8 @@ map Y y$
 " Adjust the size of NERDTREE window, either vertically or horizontally
 map ] :vertical resize +5<CR>
 map [ :vertical resize -5<CR>
-map } :res +5<CR>
-map { :res -5<CR>
+map { :res +5<CR>
+map } :res -5<CR>
 
 " F10 to toggle highlight search
 nnoremap <F12> :set hlsearch!<CR>
@@ -140,7 +139,6 @@ let NERDTreeShowHidden=1
 " Allow quit 
 map ; :x<CR>
 map ' :wq<CR>
-nnoremap <leader>, :xa<cr>
 
 " Toggle line numbers
 map nm :set invnumber<CR>
@@ -158,11 +156,14 @@ let g:LargeFile=10
 set t_Co=256
 
 " Toggle NERDTREE
-map <C-\> :NERDTreeToggle<CR>
+map <F10> :NERDTreeToggle<CR>
+
+" Toggle Taglist
+map <F9> :TlistToggle<CR>
 
 "" Use ctrl-[hjkl] to select the active split!
-" nmap <silent> <c-k> :wincmd k<CR>
-" nmap <silent> <c-j> :wincmd j<CR>
+nmap <c-k> :wincmd l<CR>
+nmap <c-j> :wincmd h<CR>
 " nmap <silent> <c-h> :wincmd h<CR>
 " nmap <silent> <c-l> :wincmd l<CR>
 
@@ -217,6 +218,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ahw/vim-pbcopy'
+Plugin 'vim-scripts/taglist'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

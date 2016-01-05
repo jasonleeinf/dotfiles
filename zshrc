@@ -9,6 +9,7 @@ export LANG=en_US.UTF-8
 . ~/.zsh/completion.zsh
 . ~/.zsh/functions.zsh
 . ~/.zsh/aliases.zsh
+. ~/.zprofile
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -22,8 +23,9 @@ HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(git colored-man-pages colorize cp rsync safe-paste vundle brew)
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jasonlee/bin/rad5R0_macosx_bin:/Users/jasonlee/bin:/Users/jasonlee/macvim/src/MacVim:/opt/X11/bin:/usr/local/git/bin:/Library/TeX/texbin:/Users/jasonlee/usr/bin:/Applications/MATLAB_R2015a.app/bin:/Users/jasonlee/bazel-0.1.1/output:/Users/jasonlee/srilm/lm/bin/macosx"
-
 [ -e ~/.zsh/custom.zsh ] && . ~/.zsh/custom.zsh
 
 true
+
+
+. /local/home/leeyu/torch/install/bin/torch-activate
