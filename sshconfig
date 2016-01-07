@@ -1,4 +1,16 @@
 # contents of $HOME/.ssh/config
+Host cscs
+    HostName ela.cscs.ch
+    User jasonlee
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host gpu
+    HostName dalabGPU.inf.ethz.ch
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
 Host dco
     HostName dco-head001.dco.ethz.ch
     User leeyu
