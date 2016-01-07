@@ -5,6 +5,12 @@ Host dco
     ForwardX11 yes
     ForwardX11Trusted yes
 
+Host gpu
+    HostName dalabgpu.inf.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
 Host br
     HostName brutus.ethz.ch 
     User leeyu
