@@ -16,6 +16,8 @@ alias se='ssh eu'
 alias sb='ssh br'
 alias sc='ssh cscs'
 
+alias c='clear'
+
 #EDITORS
 alias v='vim'
 
