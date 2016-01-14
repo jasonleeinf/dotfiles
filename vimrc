@@ -138,7 +138,7 @@ let NERDTreeShowHidden=1
 
 " Allow quit 
 map ; :x<CR>
-map ' :wq<CR>
+map ' :w<CR>
 
 " Toggle line numbers
 map nm :set invnumber<CR>
