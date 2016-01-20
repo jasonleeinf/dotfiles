@@ -16,7 +16,16 @@ alias se='ssh eu'
 alias sb='ssh br'
 alias sc='ssh cscs'
 
+#GPU USAGE
+alias gtop='nvidia-smi -l 1'
+
+#SCREEN
 alias c='clear'
+alias cl='clear; ll'
+
+#TMUX
+alias ta='tmux a -t'
+alias tl='tmux ls'
 
 #EDITORS
 alias v='vim'

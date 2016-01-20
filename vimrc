@@ -134,14 +134,12 @@ nnoremap <C-L> :nohl <CR> <C-L>
  
 let g:NERDTreeDirArrows=0
 
-let NERDTreeShowHidden=1
-
 " Allow quit 
 map ; :x<CR>
 map ' :w<CR>
 
 " Toggle line numbers
-map nm :set invnumber<CR>
+map <F7> :set invnumber<CR>
 
 " Delete line
 map - dd
@@ -157,6 +155,8 @@ set t_Co=256
 
 " Toggle NERDTREE
 map <F10> :NERDTreeToggle<CR>
+
+map <F8> :tabmove 
 
 " Toggle Taglist
 map <F9> :TlistToggle<CR>
