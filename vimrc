@@ -135,8 +135,8 @@ nnoremap <C-L> :nohl <CR> <C-L>
 let g:NERDTreeDirArrows=0
 
 " Allow quit 
-map ; :x<CR>
-map ' :w<CR>
+map ' :x<CR>
+map ; :w<CR>
 
 " Toggle line numbers
 map <F7> :set invnumber<CR>
