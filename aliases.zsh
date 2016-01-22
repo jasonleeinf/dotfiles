@@ -14,7 +14,7 @@ alias sd='ssh dco'
 alias sg='ssh gpu'
 alias se='ssh eu'
 alias sb='ssh br'
-alias sc='ssh cscs'
+alias scs='ssh cscs'
 
 #GPU USAGE
 alias gtop='nvidia-smi -l 1'
