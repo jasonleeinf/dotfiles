@@ -14,7 +14,7 @@ alias sd='ssh dco'
 alias sg='ssh gpu'
 alias se='ssh eu'
 alias sb='ssh br'
-alias sc='ssh cscs'
+alias scs='ssh cscs'
 
 #GIT
 alias grms='git ls-files | grep '\.swp$' | xargs git rm'
