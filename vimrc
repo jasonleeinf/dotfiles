@@ -139,10 +139,13 @@ map ' :x<CR>
 map ; :w<CR>
 
 " Toggle line numbers
-map <F7> :set invnumber<CR>
+map <F8> :set invnumber<CR>
+
+nnoremap <F7> :GundoToggle<CR>
 
 " Delete line
 map - dd
+map f dd
  
 let g:indentLine_char = ' '
 
@@ -156,7 +159,7 @@ set t_Co=256
 " Toggle NERDTREE
 map <F10> :NERDTreeToggle<CR>
 
-map <F8> :tabmove 
+map <F1> :tabmove 
 
 " Toggle Taglist
 map <F9> :TlistToggle<CR>
@@ -169,6 +172,21 @@ nmap <c-j> :wincmd h<CR>
 
 nmap <C-h> gT
 nmap <C-l> gt
+
+function! GotoJump()
+  jumps
+  let j = input("Please select your jump: ")
+  if j != ''
+    let pattern = '\v\c^\+'
+    if j =~ pattern
+      let j = substitute(j, pattern, '', 'g')
+      execute "normal " . j . "\<c-i>"
+    else
+      execute "normal " . j . "\<c-o>"
+    endif
+  endif
+endfunction
+
 
 "------------------------------------------------------------
 " Easymotion mappings {{{1
@@ -218,7 +236,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ahw/vim-pbcopy'
-Plugin 'vim-scripts/taglist'
+Plugin 'sjl/gundo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

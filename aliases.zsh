@@ -16,6 +16,9 @@ alias se='ssh eu'
 alias sb='ssh br'
 alias sc='ssh cscs'
 
+#GIT
+alias grms='git ls-files | grep '\.swp$' | xargs git rm'
+
 #GPU USAGE
 alias gtop='nvidia-smi -l 1'
 
