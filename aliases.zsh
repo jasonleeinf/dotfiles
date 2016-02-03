@@ -19,8 +19,9 @@ alias scs='ssh cscs'
 #GIT
 alias grms='git ls-files | grep '\.swp$' | xargs git rm'
 
-#GPU USAGE
+#GPU
 alias gtop='nvidia-smi -l 1'
+alias cv='nvcc --version'
 
 #SCREEN
 alias c='clear'

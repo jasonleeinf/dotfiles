@@ -14,7 +14,9 @@ syntax on
 "------------------------------------------------------------
 " Must have options {{{1
 " These are highly recommended options.
- 
+
+set title
+
 set hidden
 
 " Better command-line completion
@@ -50,6 +52,8 @@ set ruler
  
 " Always display the status line, even if only one window is displayed
 set laststatus=2
+map  <F6> <Esc>:echo expand('%:p')<Return>
+
  
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
@@ -137,6 +141,7 @@ let g:NERDTreeDirArrows=0
 " Allow quit 
 map ' :x<CR>
 map ; :w<CR>
+map \ :q!<CR>
 
 " Toggle line numbers
 map <F8> :set invnumber<CR>
@@ -188,6 +193,10 @@ function! GotoJump()
 endfunction
 
 
+let g:airline_theme='bubblegum'
+let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
+
+
 "------------------------------------------------------------
 " Easymotion mappings {{{1
 " let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -226,10 +235,10 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'Shougo/neocomplcache'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'Yggdroot/indentLine'
 "Plugin 'klen/python-mode'
-Plugin 'ervandew/supertab'
+"Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
