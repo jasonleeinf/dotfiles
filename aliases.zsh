@@ -30,6 +30,7 @@ alias cl='clear; ll'
 #TMUX
 alias ta='tmux a -t'
 alias tl='tmux ls'
+alias t='tmux'
 
 #EDITORS
 alias v='vim'
