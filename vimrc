@@ -124,10 +124,10 @@ set smartindent
 map Y y$
 
 " Adjust the size of NERDTREE window, either vertically or horizontally
-map ] :vertical resize +5<CR>
-map [ :vertical resize -5<CR>
-map { :res +5<CR>
-map } :res -5<CR>
+"map ] :vertical resize +5<CR>
+"map [ :vertical resize -5<CR>
+"map { :res +5<CR>
+"map } :res -5<CR>
 
 " F10 to toggle highlight search
 nnoremap <F12> :set hlsearch!<CR>
@@ -141,7 +141,6 @@ let g:NERDTreeDirArrows=0
 " Allow quit 
 map ' :x<CR>
 map ; :w<CR>
-map \ :q!<CR>
 
 " Toggle line numbers
 map <F8> :set invnumber<CR>
