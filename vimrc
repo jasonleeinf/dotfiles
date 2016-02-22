@@ -267,6 +267,8 @@ filetype plugin indent on    " required
 " close nerdtree with q 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+let g:tex_conceal = ""
+
 " Python-mode
 " Activate rope
 " Keys:
