@@ -124,8 +124,8 @@ set smartindent
 map Y y$
 
 " Adjust the size of NERDTREE window, either vertically or horizontally
-"map ] :vertical resize +5<CR>
-"map [ :vertical resize -5<CR>
+map ] :vertical resize +5<CR>
+map [ :vertical resize -5<CR>
 "map { :res +5<CR>
 "map } :res -5<CR>
 
@@ -191,10 +191,8 @@ function! GotoJump()
   endif
 endfunction
 
-
 let g:airline_theme='bubblegum'
 let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
-
 
 "------------------------------------------------------------
 " Easymotion mappings {{{1
