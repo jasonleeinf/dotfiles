@@ -4,6 +4,8 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.utf-8 
 export LANG="$LC_ALL" 
 
+export MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
+
 . ~/.zsh/prompt.zsh
 . ~/.zsh/config.zsh
 . ~/.zsh/bindings.zsh
@@ -17,6 +19,7 @@ bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 
 autoload zmv
+module load torch7
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -31,5 +34,7 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git colored-man-pages colorize cp rsync safe-paste vundle brew)
 
 [ -e ~/.zsh/custom.zsh ] && . ~/.zsh/custom.zsh
+
+umask 002
 
 true

@@ -112,6 +112,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smartindent
+au! FileType python setl nosmartindent
 
 "------------------------------------------------------------
 " Mappings {{{1
@@ -131,6 +132,8 @@ map [ :vertical resize -5<CR>
 
 " F10 to toggle highlight search
 nnoremap <F12> :set hlsearch!<CR>
+
+nnoremap <space> za
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
@@ -228,17 +231,23 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Shougo/neocomplcache'
+"Plugin 'scrooloose/nerdcommenter'
+"Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'scrooloose/syntastic'
+Plugin 'tmhedberg/SimpylFold'
+"Plugin 'Shougo/neocomplcache'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Yggdroot/indentLine'
 "Plugin 'klen/python-mode'
 "Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
+"Plugin 'nvie/vim-flake8'
+Plugin 'vim-scripts/indentpython.vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ahw/vim-pbcopy'
@@ -283,7 +292,7 @@ let g:tex_conceal = ""
 
 "Linting
 let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
+"let g:pymode_lint_checker = "pyflakes,pep8"
 " Auto check on save
 let g:pymode_lint_write = 1
 " map <C-f> :PymodeLintAuto<CR>
@@ -296,4 +305,14 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
+
+set foldmethod=indent
+set foldlevel=99
+set encoding=utf-8
+
+"let g:ycm_autoclose_preview_window_after_completion=1
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let python_highlight_all=1
+
 "------------------------------------------------------------
