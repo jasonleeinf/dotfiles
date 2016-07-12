@@ -1,3 +1,21 @@
+Host mercer
+    HostName mercer.es.its.nyu.edu
+    User yl1363
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host hpc
+    HostName hpc.nyu.edu
+    User yl1363
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host nyu
+    HostName access.cims.nyu.edu
+    User yunjae
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
 Host w1
 	Hostname weaver1
 	ForwardX11 yes
