@@ -1,61 +1,39 @@
-# contents of $HOME/.ssh/config
-Host cscs
-    HostName ela.cscs.ch
-    User jasonlee
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host w1
+	Hostname weaver1
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host gpu
-    HostName dalabGPU.inf.ethz.ch
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host w2
+	Hostname weaver2
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host dco
-    HostName dco-head001.dco.ethz.ch
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host w3
+	Hostname weaver3
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host gpu
-    HostName dalabgpu.inf.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host w4
+	Hostname weaver4
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host br
-    HostName brutus.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host w5
+	Hostname weaver5
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host br1
-    HostName brutus1.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host c4
+	Hostname crunchy4
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host br2
-    HostName brutus2.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
+Host c5
+	Hostname crunchy5
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
-Host br3
-    HostName brutus3.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host br4
-    HostName brutus4.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host eu 
-    HostName euler.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
+Host c6
+	Hostname crunchy6
+	ForwardX11 yes
+	ForwardX11Trusted yes
