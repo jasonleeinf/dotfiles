@@ -1,5 +1,5 @@
 Host mercer
-    HostName mercer.es.its.nyu.edu
+    HostName mercer0.es.its.nyu.edu
     User yl1363
     ForwardX11 yes
     ForwardX11Trusted yes
