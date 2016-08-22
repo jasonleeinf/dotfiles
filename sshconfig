@@ -1,5 +1,5 @@
 Host mercer
-    HostName mercer.es.its.nyu.edu
+    HostName mercer0.es.its.nyu.edu
     User yl1363
     ForwardX11 yes
     ForwardX11Trusted yes
@@ -55,3 +55,33 @@ Host c6
 	Hostname crunchy6
 	ForwardX11 yes
 	ForwardX11Trusted yes
+
+Host cscs
+    HostName ela.cscs.ch
+    User jasonlee
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host gpu
+    HostName dalabGPU.inf.ethz.ch
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host dco
+    HostName dco-head001.dco.ethz.ch
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host gpu
+    HostName dalabgpu.inf.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host grinder
+    HostName grinder.inf.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
