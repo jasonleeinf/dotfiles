@@ -13,7 +13,8 @@ alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 alias sd='ssh dco'
 alias tnslword='THEANO_FLAGS=base_compiledir=/tmp/theano.crunchy,device=cpu,floatX=float32 python character_base/translate.py -n -bpe /misc/kcgscratch1/ChoGroup/jasonlee/dl4mt-tutorial/models/bpe2char_two_layer_gru_decoder_adam.295000.npz /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.en.tok.bpe.word.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.de.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/test/newstest2014-deen-src.en.tok.bpe results/hi2'
 alias tnslchar='THEANO_FLAGS=base_compiledir=/tmp/theano.crunchy,device=cpu,floatX=float32 python character_base/translate.py -n -dec_c -enc_c -utf8 /misc/kcgscratch1/ChoGroup/jasonlee/dl4mt-tutorial/models/char2char_two_layer_gru_decoder_adam.95000.npz /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.en.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.de.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/test/newstest2014-deen-src.en.tok results/hi3'
-alias sg='ssh gpu'
+alias gp='ssh gpu'
+alias gr='ssh grinder'
 alias se='ssh eu'
 alias sb='ssh br'
 alias scs='ssh cscs'
@@ -28,7 +29,11 @@ alias c4='ssh c4'
 alias c5='ssh c5'
 alias c6='ssh c6'
 alias r9='ssh rose9'
+<<<<<<< HEAD
 alias gg="git add -u; git commit -m 'hi'; git push"
+=======
+alias gg='git add -u; git commit -m "hi"; git push'
+>>>>>>> 82657756ac90ffb2b540dcdbf20a567fa8adf731
 
 #GIT
 alias grms='git ls-files | grep '\.swp$' | xargs git rm'
