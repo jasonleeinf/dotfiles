@@ -19,7 +19,6 @@ bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 
 autoload zmv
-module load torch7
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

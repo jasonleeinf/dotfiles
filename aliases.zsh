@@ -28,6 +28,7 @@ alias c4='ssh c4'
 alias c5='ssh c5'
 alias c6='ssh c6'
 alias r9='ssh rose9'
+alias gg='git add -u; git commit -m "hi"; git push'
 
 #GIT
 alias grms='git ls-files | grep '\.swp$' | xargs git rm'
