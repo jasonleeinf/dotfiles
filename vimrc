@@ -118,6 +118,13 @@ au! FileType python setl nosmartindent
 " Mappings {{{1
 "
 " Useful mappings
+
+" Long text navigation mapping
+nnoremap k gk
+nnoremap j gj
+nnoremap 0 g0
+nnoremap 6 g6
+nnoremap $ g$
  
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
