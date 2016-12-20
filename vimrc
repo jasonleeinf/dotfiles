@@ -138,7 +138,7 @@ map [ :vertical resize -5<CR>
 "map } :res -5<CR>
 
 " F10 to toggle highlight search
-nnoremap <F12> :set hlsearch!<CR>
+nnoremap <F12> :noh<CR>
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search

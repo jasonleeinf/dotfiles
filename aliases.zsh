@@ -9,9 +9,9 @@ esac
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 
-alias lx='pdflatex main; bibtex main; pdflatex main; pdflatex main; open main.pdf'
-alias ax='pdflatex arxiv; bibtex arxiv; pdflatex arxiv; pdflatex arxiv; open arxiv.pdf'
-alias op='open main.pdf'
+function ltx {
+        pdflatex $1; bibtex $1; pdflatex $1; pdflatex $1; open "$1.pdf"
+}
 
 #SSH
 alias sd='ssh dco'
