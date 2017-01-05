@@ -13,15 +13,15 @@ rm -fv ~/.zshrc
 rm -fv ~/.tmux.conf
 rm -fv ~/.ssh/config
 
-ln -s vimrc ~/.vimrc
-ln -s zshrc ~/.zshrc
-ln -s tmuxconfig ~/.tmux.conf
-ln -s sshconfig ~/.ssh/config
+ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/tmuxconfig ~/.tmux.conf
+ln -s ~/dotfiles/sshconfig ~/.ssh/config
 
-ln -s aliases.zsh ~/.zsh/aliases.zsh
-ln -s bindings.zsh ~/.zsh/bindings.zsh
-ln -s colors.zsh ~/.zsh/colors.zsh
-ln -s completion.zsh ~/.zsh/completion.zsh
-ln -s config.zsh ~/.zsh/config.zsh
-ln -s functions.zsh ~/.zsh/functions.zsh
-ln -s prompt.zsh ~/.zsh/prompt.zsh
+ln -s ~/dotfiles/aliases.zsh ~/.zsh/aliases.zsh
+ln -s ~/dotfiles/bindings.zsh ~/.zsh/bindings.zsh
+ln -s ~/dotfiles/colors.zsh ~/.zsh/colors.zsh
+ln -s ~/dotfiles/completion.zsh ~/.zsh/completion.zsh
+ln -s ~/dotfiles/config.zsh ~/.zsh/config.zsh
+ln -s ~/dotfiles/functions.zsh ~/.zsh/functions.zsh
+ln -s ~/dotfiles/prompt.zsh ~/.zsh/prompt.zsh
