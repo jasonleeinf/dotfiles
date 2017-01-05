@@ -9,6 +9,10 @@ esac
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 
+function ltx {
+        pdflatex $1; bibtex $1; pdflatex $1; pdflatex $1; open "$1.pdf"
+}
+
 #SSH
 alias sd='ssh dco'
 alias tnslword='THEANO_FLAGS=base_compiledir=/tmp/theano.crunchy,device=cpu,floatX=float32 python character_base/translate.py -n -bpe /misc/kcgscratch1/ChoGroup/jasonlee/dl4mt-tutorial/models/bpe2char_two_layer_gru_decoder_adam.295000.npz /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.en.tok.bpe.word.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.de.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/test/newstest2014-deen-src.en.tok.bpe results/hi2'
