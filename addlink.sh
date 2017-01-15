@@ -25,3 +25,5 @@ ln -s ~/dotfiles/completion.zsh ~/.zsh/completion.zsh
 ln -s ~/dotfiles/config.zsh ~/.zsh/config.zsh
 ln -s ~/dotfiles/functions.zsh ~/.zsh/functions.zsh
 ln -s ~/dotfiles/prompt.zsh ~/.zsh/prompt.zsh
+
+ln ~/dotfiles/zprofile ~/.zprofile
