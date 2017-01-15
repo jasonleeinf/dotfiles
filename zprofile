@@ -1,3 +1,4 @@
+export PATH="/usr/local/cuda/bin:$PATH"
 export PATH="/local/home/leeyu/.local/bin:$PATH"
 export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH="/home/leeyu/.local/lib:$LD_LIBRARY_PATH"
