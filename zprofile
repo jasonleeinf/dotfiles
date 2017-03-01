@@ -17,3 +17,5 @@ export LDFLAGS="-L$CUDA_ROOT/lib64"
 
 alias scr="cd /local/home/leeyu/scratch/"
 alias dat="cd /local/home/leeyu/dataset/"
+alias wmt="cd /local/home/leeyu/dataset/wmt15"
+alias nasty='rm -rf ./.*swp; rm -rf ./*pyc;rm -rf ./*/.*swp; rm -rf ./*/*pyc'
