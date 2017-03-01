@@ -85,3 +85,9 @@ Host grinder
     User leeyu
     ForwardX11 yes
     ForwardX11Trusted yes
+
+Host youagain
+    HostName youagain.inf.ethz.ch 
+    User leeyu
+    ForwardX11 yes
+    ForwardX11Trusted yes
