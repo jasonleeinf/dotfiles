@@ -1,3 +1,18 @@
+Host dev
+    HostName devvm160.frc2.facebook.com
+
+Host ash2
+    HostName devgpu040.ash5.facebook.com
+    User jasonleeinf
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host ash1
+    HostName devgpu037.ash5.facebook.com
+    User jasonleeinf
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
 Host mercer
     HostName mercer0.es.its.nyu.edu
     User yl1363

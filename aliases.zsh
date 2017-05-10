@@ -17,6 +17,8 @@ function ltx {
 alias sd='ssh dco'
 alias tnslword='THEANO_FLAGS=base_compiledir=/tmp/theano.crunchy,device=cpu,floatX=float32 python character_base/translate.py -n -bpe /misc/kcgscratch1/ChoGroup/jasonlee/dl4mt-tutorial/models/bpe2char_two_layer_gru_decoder_adam.295000.npz /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.en.tok.bpe.word.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.de.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/test/newstest2014-deen-src.en.tok.bpe results/hi2'
 alias tnslchar='THEANO_FLAGS=base_compiledir=/tmp/theano.crunchy,device=cpu,floatX=float32 python character_base/translate.py -n -dec_c -enc_c -utf8 /misc/kcgscratch1/ChoGroup/jasonlee/dl4mt-tutorial/models/char2char_two_layer_gru_decoder_adam.95000.npz /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.en.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/train/all_de-en.de.tok.300.pkl /misc/kcgscratch1/ChoGroup/junyoung_exp/wmt15/deen/test/newstest2014-deen-src.en.tok results/hi3'
+alias ga1='ssh ash1'
+alias ga2='ssh ash2'
 alias gp='ssh gpu'
 alias gy='ssh youagain'
 alias gr='ssh grinder'

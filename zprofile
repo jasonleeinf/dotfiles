@@ -3,6 +3,7 @@ export PATH="/usr/local/cuda/lib64:$PATH"
 export PATH="/opt/gcc5/bin:$PATH"
 export PATH="/local/home/leeyu/.local/bin:$PATH"
 export PATH="/local/home/leeyu/Python-2.7.13:$PATH"
+export PATH="/Users/jasonleeinf/miniconda2/bin:$PATH"
 
 export PYTHONPATH="/local/home/leeyu/Python-2.7.13"
 
