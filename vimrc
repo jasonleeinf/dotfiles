@@ -10,6 +10,7 @@ filetype indent plugin on
  
 " Enable syntax highlighting
 syntax on
+let python_highlight_all=1
 
 "------------------------------------------------------------
 " Must have options {{{1
@@ -234,19 +235,20 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'scrooloose/nerdcommenter'
-"Plugin 'jistr/vim-nerdtree-tabs'
-"Plugin 'scrooloose/syntastic'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold'
 "Plugin 'Shougo/neocomplcache'
 "Plugin 'Valloric/YouCompleteMe'
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Yggdroot/indentLine'
-"Plugin 'klen/python-mode'
 "Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'Raimondi/delimitMate'
@@ -315,9 +317,10 @@ set foldmethod=indent
 set foldlevel=99
 set encoding=utf-8
 
-"let g:ycm_autoclose_preview_window_after_completion=1
-"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-let python_highlight_all=1
+let g:jedi#auto_initialization = 0
+let g:jedi#auto_vim_configuration = 0
 
 "------------------------------------------------------------

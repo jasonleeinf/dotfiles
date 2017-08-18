@@ -4,6 +4,12 @@ Host mercer
     ForwardX11 yes
     ForwardX11Trusted yes
 
+Host prince
+    HostName prince.hpc.nyu.edu
+    User yl1363
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
 Host hpc
     HostName hpc.nyu.edu
     User yl1363
@@ -17,27 +23,27 @@ Host nyu
     ForwardX11Trusted yes
 
 Host w1
-	Hostname weaver1
+	Hostname weaver1.cs.nyu.edu
 	ForwardX11 yes
 	ForwardX11Trusted yes
 
 Host w2
-	Hostname weaver2
+	Hostname weaver2.cs.nyu.edu
 	ForwardX11 yes
 	ForwardX11Trusted yes
 
 Host w3
-	Hostname weaver3
+	Hostname weaver3.cs.nyu.edu
 	ForwardX11 yes
 	ForwardX11Trusted yes
 
 Host w4
-	Hostname weaver4
+	Hostname weaver4.cs.nyu.edu
 	ForwardX11 yes
 	ForwardX11Trusted yes
 
 Host w5
-	Hostname weaver5
+	Hostname weaver5.cs.nyu.edu
 	ForwardX11 yes
 	ForwardX11Trusted yes
 

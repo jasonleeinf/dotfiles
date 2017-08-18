@@ -1,15 +1,14 @@
-export PATH="/usr/local/cuda/bin:$PATH"
-export PATH="/usr/local/cuda/lib64:$PATH"
-export PATH="/opt/gcc5/bin:$PATH"
-export PATH="/local/home/leeyu/.local/bin:$PATH"
-export PATH="/local/home/leeyu/Python-2.7.13:$PATH"
+export PATH="/misc/kcgscratch1/CUDA/cuda-8.0.21/bin:$PATH"
+export PATH="/misc/kcgscratch1/CUDA/cuda-8.0.21/lib64:$PATH"
+export PATH="/home/yunjae/.local/bin:$PATH"
+#export PATH="/home/yunjae/Python-2.7.13:$PATH"
 
-export PYTHONPATH="/local/home/leeyu/Python-2.7.13"
+export PYTHONPATH="/home/yunjae/Python-2.7.13"
 
-export CUDA_HOME=/usr/local/cuda
-export CUDA_ROOT=/usr/local/cuda
+export CUDA_HOME=/misc/kcgscratch1/CUDA/cuda-8.0.21
+export CUDA_ROOT=/misc/kcgscratch1/CUDA/cuda-8.0.21
 
-export LD_LIBRARY_PATH="/home/leeyu/.local/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/home/yunjae/.local/lib:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="/opt/gcc5/lib64:$LD_LIBRARY_PATH"
 
@@ -18,5 +17,5 @@ export LDFLAGS="-L$CUDA_ROOT/lib64"
 
 ##
 
-alias scr="cd /local/home/leeyu/scratch/"
+alias scr="cd /misc/kcgscratch1/ChoGroup/jasonlee"
 alias dat="cd /local/home/leeyu/dataset/"
