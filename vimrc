@@ -145,7 +145,11 @@ nnoremap <F12> :noh<CR>
 " next search
 nnoremap <C-L> :nohl <CR> <C-L>
  
-let g:NERDTreeDirArrows=0
+"let g:NERDTreeDirArrows=0
+let NERDTreeAutoDeleteBuffer = 1
+"let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+nnoremap <leader>e :buffer NERD_tree_1<CR>
 
 " Allow quit 
 map ' :x<CR>
@@ -238,9 +242,9 @@ Plugin 'gmarik/Vundle.vim'
 "Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'scrooloose/nerdcommenter'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
+"Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold'
 "Plugin 'Shougo/neocomplcache'
 "Plugin 'Valloric/YouCompleteMe'
