@@ -37,3 +37,9 @@ plugins=(git colored-man-pages colorize cp rsync safe-paste vundle brew)
 umask 002
 
 true
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/yunjae/google-cloud-sdk/path.zsh.inc' ]; then source '/home/yunjae/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/yunjae/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/yunjae/google-cloud-sdk/completion.zsh.inc'; fi

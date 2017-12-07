@@ -54,7 +54,7 @@
     #set -g mouse-select-pane off
     #set -g mouse-resize-pane off
     #set -g mouse-select-window off
-    set -g mouse off
+    #set -g mouse off
 
     # ---------------------
     # Copy & Paste
@@ -105,8 +105,8 @@
     set-option -g status-fg yellow #yellow
     set-option -g status-attr dim 
 
-    set -g window-style 'fg=colour247,bg=colour236'
-    set -g window-active-style 'fg=colour250,bg=black'
+    #set -g window-style 'fg=colour247,bg=colour236'
+    #set -g window-active-style 'fg=colour250,bg=black'
 
     # set window list colors - red for active and cyan for inactive
     set-window-option -g window-status-fg brightblue #base0

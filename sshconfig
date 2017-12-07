@@ -1,3 +1,8 @@
+Host cs
+	Hostname cassio.cs.nyu.edu
+	ForwardX11 yes
+	ForwardX11Trusted yes
+
 Host dev
     HostName devvm160.frc2.facebook.com
 
@@ -36,6 +41,11 @@ Host nyu
     User yunjae
     ForwardX11 yes
     ForwardX11Trusted yes
+
+Host d1
+	Hostname dgx1.cs.nyu.edu
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
 Host w1
 	Hostname weaver1.cs.nyu.edu
@@ -76,39 +86,3 @@ Host c6
 	Hostname crunchy6
 	ForwardX11 yes
 	ForwardX11Trusted yes
-
-Host cscs
-    HostName ela.cscs.ch
-    User jasonlee
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host gpu
-    HostName dalabGPU.inf.ethz.ch
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host dco
-    HostName dco-head001.dco.ethz.ch
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host gpu
-    HostName dalabgpu.inf.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host grinder
-    HostName grinder.inf.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
-
-Host youagain
-    HostName youagain.inf.ethz.ch 
-    User leeyu
-    ForwardX11 yes
-    ForwardX11Trusted yes
