@@ -10,6 +10,8 @@ function ltx {
         pdflatex $1; bibtex $1; pdflatex $1; pdflatex $1; open "$1.pdf"
 }
 
+alias vundle='vim +PluginInstall +qall'
+
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 

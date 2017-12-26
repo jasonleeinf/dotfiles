@@ -25,7 +25,6 @@ set showcmd
  
 "------------------------------------------------------------
 set hlsearch " highlight all search matches"
-set incsearch " searching starts after you enter the string"
 
 nnoremap <F12> :noh<CR> 
 
@@ -100,11 +99,12 @@ set go+=a
 
 "------------------------------------------------------------
 " Indentation settings for using hard tabs for indent. Display tabs as
-" four characters wide.
-set shiftwidth=4
 set tabstop=4
-set smartindent
 set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set smartindent
+set autoindent
 set expandtab
 au! FileType python setl nosmartindent
 
@@ -116,8 +116,8 @@ au! FileType python setl nosmartindent
 map Y y$
 
 " Adjust the size of NERDTREE window, either vertically or horizontally
-map ] :vertical resize +5<CR>
-map [ :vertical resize -5<CR>
+map ] :vertical resize +5
+map [ :vertical resize -5
  
 "let g:NERDTreeDirArrows=0
 let NERDTreeAutoDeleteBuffer = 1
@@ -177,65 +177,32 @@ let g:airline_theme='bubblegum'
 let g:airline_section_c = '%<%F%m %#__accent_red#%{airline#util#wrap(airline#parts#readonly(),0)}%#__restore__#'
 
 "------------------------------------------------------------
-" Easymotion mappings {{{1
-" let g:EasyMotion_do_mapping = 0 " Disable default mappings
-
-" Bi-directional find motion
-" Jump to anywhere you want with minimal keystrokes, with just one key binding.
-" `s{char}{label}`
-" nmap s <Plug>(easymotion-s)
-" or
-" `s{char}{char}{label}`
-" Need one more keystroke, but on average, it may be more comfortable.
-" nmap s <Plug>(easymotion-s2)
-
-" Turn on case insensitive feature
-" let g:EasyMotion_smartcase = 1
-
-"------------------------------------------------------------
 " Vundle {{{1
 "
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-"Plugin 'scrooloose/nerdcommenter'
-"Plugin 'jistr/vim-nerdtree-tabs'
-"Plugin 'scrooloose/syntastic'
-"Plugin 'nvie/vim-flake8'
 Plugin 'tmhedberg/SimpylFold'
-"Plugin 'Shougo/neocomplcache'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'davidhalter/jedi-vim'
 Plugin 'kien/ctrlp.vim'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Yggdroot/indentLine'
-"Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
-"Plugin 'nvie/vim-flake8'
-Plugin 'vim-scripts/indentpython.vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ahw/vim-pbcopy'
 Plugin 'craigemery/vim-autotag'
 Plugin 'tomtom/tcomment_vim'
-
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+Plugin 'vim-scripts/indentpython.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -253,6 +220,15 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 "------------------------------------------------------------
+
+" Taglist options
+let Tlist_Auto_Update = 1
+let Tlist_Compact_Format = 0
+let Tlist_Display_Prototype = 0
+let Tlist_Sort_Type = "order"
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 " Etc {{{1
 
 " close nerdtree with q 
