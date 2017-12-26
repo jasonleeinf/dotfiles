@@ -13,9 +13,6 @@ syntax on
 let python_highlight_all=1
 
 "------------------------------------------------------------
-" Must have options {{{1
-" These are highly recommended options.
-
 set title
 
 set hidden
@@ -26,14 +23,17 @@ set wildmenu
 " Show partial commands in the last line of the screen
 set showcmd
  
-" Highlight searches (use <C-L> to temporarily turn off highlighting; see the
-" mapping of <C-L> below)
-set hlsearch
-
 "------------------------------------------------------------
-" Usability options {{{1
-" Use case insensitive search, except when using capital letters
+set hlsearch " highlight all search matches"
+set incsearch " searching starts after you enter the string"
 
+nnoremap <F12> :noh<CR> 
+
+" Map <C-L> (redraw screen) to also turn off search highlighting until the
+" next search
+nnoremap <C-L> :nohl <CR> <C-L>
+
+" Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
  
@@ -54,7 +54,6 @@ set ruler
 " Always display the status line, even if only one window is displayed
 set laststatus=2
 map  <F6> <Esc>:echo expand('%:p')<Return>
-
  
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
@@ -100,50 +99,25 @@ endif
 set go+=a
 
 "------------------------------------------------------------
-" Indentation options {{{1
-"
-" Indentation settings for using 4 spaces instead of tabs.
-
-set shiftwidth=4
-set softtabstop=4
-set expandtab
- 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
 set shiftwidth=4
 set tabstop=4
 set smartindent
+set softtabstop=4
+set expandtab
 au! FileType python setl nosmartindent
 
 "------------------------------------------------------------
 " Mappings {{{1
-"
-" Useful mappings
 
-" Long text navigation mapping
-"nnoremap k gk
-"nnoremap j gj
-"nnoremap 0 g0
-"nnoremap 6 g6
-"nnoremap $ g$
- 
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
-
 map Y y$
 
 " Adjust the size of NERDTREE window, either vertically or horizontally
 map ] :vertical resize +5<CR>
 map [ :vertical resize -5<CR>
-"map { :res +5<CR>
-"map } :res -5<CR>
-
-" F10 to toggle highlight search
-nnoremap <F12> :noh<CR>
-
-" Map <C-L> (redraw screen) to also turn off search highlighting until the
-" next search
-nnoremap <C-L> :nohl <CR> <C-L>
  
 "let g:NERDTreeDirArrows=0
 let NERDTreeAutoDeleteBuffer = 1
@@ -158,14 +132,11 @@ map ; :w<CR>
 " Toggle line numbers
 map <F8> :set invnumber<CR>
 
-nnoremap <F7> :GundoToggle<CR>
-
 " Delete line
 map - dd
 map f dd
  
 let g:indentLine_char = ' '
-
 let g:LargeFile=10
 
 :set shortmess=a
@@ -178,7 +149,6 @@ map <F10> :NERDTreeToggle<CR>
 
 map <F1> :tabmove 
 
-" Toggle Taglist
 map <F9> :TlistToggle<CR>
 
 "" Use ctrl-[hjkl] to select the active split!
@@ -194,7 +164,6 @@ function! GotoJump()
   jumps
   let j = input("Please select your jump: ")
   if j != ''
-    let pattern = '\v\c^\+'
     if j =~ pattern
       let j = substitute(j, pattern, '', 'g')
       execute "normal " . j . "\<c-i>"
@@ -262,7 +231,11 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ahw/vim-pbcopy'
-Plugin 'sjl/gundo.vim'
+Plugin 'craigemery/vim-autotag'
+Plugin 'tomtom/tcomment_vim'
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
