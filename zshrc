@@ -4,7 +4,12 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.utf-8 
 export LANG="$LC_ALL" 
 
-export MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
+# Slurm
+if [[ $(whoami) == "yl1363" ]]; then
+	source /opt/ohpc/admin/lmod/lmod/init/zsh
+else
+	MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
+fi
 
 . ~/.zsh/prompt.zsh
 . ~/.zsh/config.zsh
