@@ -15,9 +15,9 @@ fi
 . ~/.zsh/config.zsh
 . ~/.zsh/bindings.zsh
 . ~/.zsh/completion.zsh
-. ~/.zsh/functions.zsh
 . ~/.zsh/aliases.zsh
 . ~/.zprofile
+. ~/.zsh/functions.zsh
 
 bindkey -e
 bindkey '^[[1;9C' forward-word
@@ -40,11 +40,3 @@ plugins=(git colored-man-pages colorize cp rsync safe-paste vundle brew)
 [ -e ~/.zsh/custom.zsh ] && . ~/.zsh/custom.zsh
 
 umask 002
-
-true
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/yunjae/google-cloud-sdk/path.zsh.inc' ]; then source '/home/yunjae/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/yunjae/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/yunjae/google-cloud-sdk/completion.zsh.inc'; fi
