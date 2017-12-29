@@ -11,20 +11,11 @@ alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
 alias sq="squeue -l --format='%.5i %.9q %.14j %.9u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
 
-sint() {
-    if [[ $(whoami) == "yunjae" ]]; then
-        srun --time=168:00:00 --qos=interactive --gres=gpu:1 --constraint=gpu_12gb --pty zsh
-    else
-        srun --time=168:00:00 --gres=gpu:1 --constraint=gpu_12gb --pty zsh
-    fi
-}
-
 alias vundle='vim +PluginInstall +qall'
 
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 
-#alias scr="cd /misc/kcgscratch1/ChoGroup/jason"
 alias nasty='find . -name "*.pyc" -print -type f -delete; find . -name "*.swp" -print -type f -delete; find . -name "*.swo" -print -type f -delete; find . -name "*.py~" -print -type f -delete'
 
 alias python_ipdb="python -m ipdb"
