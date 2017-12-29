@@ -30,6 +30,18 @@ Host prince
     ForwardX11 yes
     ForwardX11Trusted yes
 
+Host prince1
+    HostName prince1.hpc.nyu.edu
+    User yl1363
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
+Host prince2
+    HostName prince2.hpc.nyu.edu
+    User yl1363
+    ForwardX11 yes
+    ForwardX11Trusted yes
+
 Host hpc
     HostName hpc.nyu.edu
     User yl1363
