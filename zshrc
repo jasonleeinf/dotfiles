@@ -7,6 +7,9 @@ export LANG="$LC_ALL"
 # Slurm
 if [[ $(whoami) == "yl1363" ]]; then
 	source /opt/ohpc/admin/lmod/lmod/init/zsh
+    module load pytorch/python3.6/0.3.0_4
+    alias python=python3
+    alias pip=pip3
 else
 	MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
 fi
