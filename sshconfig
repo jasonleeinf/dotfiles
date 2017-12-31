@@ -1,5 +1,6 @@
 Host cs
 	Hostname cassio.cs.nyu.edu
+    User yunjae
 	ForwardX11 yes
 	ForwardX11Trusted yes
 
