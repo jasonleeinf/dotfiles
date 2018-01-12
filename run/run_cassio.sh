@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 #
 #all commands that start with SBATCH contain commands that are just used by SLURM for scheduling
 #################
@@ -22,7 +22,7 @@
 
 #################
 #memory per node; default is 4000 MB per CPU
-#SBATCH --mem=4000
+#SBATCH --mem=8000
 #SBATCH --constraint=gpu_12gb
 
 #################
@@ -30,5 +30,5 @@
 #SBATCH --mail-type=END,FAIL # notifications for job done & fail
 #SBATCH --mail-user=jason@cs.nyu.edu
 
-SCR=$1
-srun ${SCR}
+echo ${1}
+eval ${1}
