@@ -10,6 +10,8 @@ esac
 alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
 alias sq="squeue -l --format='%.9i %.9q %.14j %.9u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
+alias sq40="sq | grep gpu:p40"
+alias sq100="sq | grep gpu:p100"
 
 alias vundle='vim +PluginInstall +qall'
 

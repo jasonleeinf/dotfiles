@@ -11,7 +11,7 @@ function scr() {
         cd "/Users/jason/scratch"
     elif [ "$(whoami)" = "yl1363" ];
     then
-        cd "/home/yl1363/scratch"
+        cd "/scratch/yl1363"
     else
         cd "~"
     fi
