@@ -130,6 +130,7 @@ map ; :w<CR>
 
 " Toggle line numbers
 map <F8> :set invnumber<CR>
+map <F7> :set nowrap<CR>
 
 " Delete line
 map - dd

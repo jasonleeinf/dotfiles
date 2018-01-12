@@ -30,18 +30,21 @@
 #SBATCH --mail-type=END,FAIL # notifications for job done & fail
 #SBATCH --mail-user=jason@cs.nyu.edu
 
-SCR=$1
+path=$1
 prefix=$2
+scr=$3
+cd $path
+pwd
 
 for iter in 1 2 3 4 5
 do
     if [ "$iter" = 1 ];
     then
-        command="${SCR} --no_tqdm --prefix ${prefix}"
+        command="${scr} --no_tqdm --prefix ${prefix}"
         echo $command
         srun $command
     else
-        command="${SCR} --no_tqdm --load_from ${prefix}"
+        command="${scr} --no_tqdm --load_from ${prefix}"
         echo $command
         srun $command
     fi

@@ -20,6 +20,8 @@ alias nasty='find . -name "*.pyc" -print -type f -delete; find . -name "*.swp" -
 
 alias python_ipdb="python -m ipdb"
 
+alias sb_cs="sbatch ~/dotfiles/run_cassio.sh"
+
 #SSH
 alias sp='ssh prince'
 alias nyu='ssh nyu'
