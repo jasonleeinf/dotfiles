@@ -28,8 +28,6 @@
 
 #################
 # Have SLURM send you an email when the job ends or fails, careful, the email could end up in your clutter folder
-#SBATCH --mail-type=END,FAIL # notifications for job done & fail
-#SBATCH --mail-user=jason@cs.nyu.edu
 
 echo ${1}
 eval ${1}
