@@ -26,6 +26,9 @@ alias sb_cs="sbatch ~/dotfiles/run_cassio.sh"
 
 #SSH
 alias sp='ssh prince'
+alias sp0='ssh prince0'
+alias sp1='ssh prince1'
+
 alias nyu='ssh nyu'
 alias fa='cd /misc/kcgscratch1/ChoGroup/jason/fair'
 
