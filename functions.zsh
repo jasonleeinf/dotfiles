@@ -23,7 +23,7 @@ function sint() {
         srun --time=168:00:00 --qos=interactive --gres=gpu:1 --constraint=gpu_12gb --pty zsh
     elif [ "$(whoami)" = "yl1363" ];
     then
-        srun --time=168:00:00 --mem=10000 --cpus-per-task=2 --ntasks-per-node=1 --gres=gpu:p40:1 --pty /usr/bin/zsh
+        srun --time=168:00:00 --mem=10000 --exclude=gpu-61,gpu-63,gpu-35 --gres=gpu:p40:1 --pty /usr/bin/zsh
     else
         echo "no slurm"
     fi

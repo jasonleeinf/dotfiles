@@ -6,12 +6,23 @@ case "$(uname)" in
         alias ls='ls -G' ;;
 esac
 
+#DECODE
+alias dec_iwslt_ende="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params small --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset iwslt-ende --debug"
+alias dec_iwslt_deen="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params small --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset iwslt-deen --debug"
+
+alias dec_wmt15_ende="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 60000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt15-ende --debug"
+alias dec_wmt15_deen="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 60000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt15-deen --debug"
+
 #SLURM
 alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
-alias sq="squeue -l --format='%.9i %.9q %.14j %.9u %.9b %.6D %.6N %.15L'"
+alias sq="squeue -l --format='%.9i %.9q %.40j %.9u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
 alias sq40="sq | grep gpu:p40"
 alias sq100="sq | grep gpu:p100"
+alias sq40-="sq | grep gpu:p40 | grep gpu-"
+alias sq100-="sq | grep gpu:p100 | grep gpu-"
+
+alias jt="cd /scratch/yl1363/nonauto-neural-gpu/transformer_jt"
 
 alias vundle='vim +PluginInstall +qall'
 
