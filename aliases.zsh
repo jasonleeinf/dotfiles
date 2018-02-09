@@ -37,12 +37,39 @@ alias sb_cs="sbatch ~/dotfiles/run_cassio.sh"
 
 #SSH
 alias sp='ssh prince'
+alias sp0='ssh prince0'
+alias sp1='ssh prince1'
+
 alias nyu='ssh nyu'
 alias fa='cd /misc/kcgscratch1/ChoGroup/jason/fair'
 
 alias cs='ssh cs'
 alias d1='ssh d1'
 alias gg="git add -u; git commit -m 'hi'; git push"
+
+alias nyu1990='ssh -L 1990:127.0.0.1:1990 nyu'
+alias nyu1991='ssh -L 1991:127.0.0.1:1991 nyu'
+alias nyu1992='ssh -L 1992:127.0.0.1:1992 nyu'
+alias nyu1993='ssh -L 1993:127.0.0.1:1993 nyu'
+alias nyu1994='ssh -L 1994:127.0.0.1:1994 nyu'
+alias nyu1995='ssh -L 1995:127.0.0.1:1995 nyu'
+alias nyu1996='ssh -L 1996:127.0.0.1:1996 nyu'
+alias nyu1997='ssh -L 1997:127.0.0.1:1997 nyu'
+alias nyu1998='ssh -L 1998:127.0.0.1:1998 nyu'
+alias nyu1999='ssh -L 1999:127.0.0.1:1999 nyu'
+alias nyu2000='ssh -L 2000:127.0.0.1:2000 nyu'
+
+alias prince1990='ssh -L 1990:127.0.0.1:1990 prince'
+alias prince1991='ssh -L 1991:127.0.0.1:1991 prince'
+alias prince1992='ssh -L 1992:127.0.0.1:1992 prince'
+alias prince1993='ssh -L 1993:127.0.0.1:1993 prince'
+alias prince1994='ssh -L 1994:127.0.0.1:1994 prince'
+alias prince1995='ssh -L 1995:127.0.0.1:1995 prince'
+alias prince1996='ssh -L 1996:127.0.0.1:1996 prince'
+alias prince1997='ssh -L 1997:127.0.0.1:1997 prince'
+alias prince1998='ssh -L 1998:127.0.0.1:1998 prince'
+alias prince1999='ssh -L 1999:127.0.0.1:1999 prince'
+alias prince2000='ssh -L 2000:127.0.0.1:2000 prince'
 
 #GIT
 alias grms='git ls-files | grep '\.swp$' | xargs git rm'

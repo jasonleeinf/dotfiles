@@ -69,9 +69,9 @@
    # bind p paste-buffer
 
     # setup 'v' to begin selection as in Vim
-    bind-key -t vi-copy v begin-selection
-    bind-key -t vi-copy y copy-selection
-    bind-key -t vi-copy Escape cancel
+    #bind-key -t vi-copy v begin-selection
+    #bind-key -t vi-copy y copy-selection
+    #bind-key -t vi-copy Escape cancel
 
     # ----------------------
     #set-option -g default-command "reattach-to-user-namespace -l zsh"
