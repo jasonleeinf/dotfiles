@@ -15,7 +15,7 @@
 #################
 # --gres will give you one GPU, you can ask for more, up to 8 (or how ever many are on the node/card)
 #SBATCH --gres=gpu:1
-#SBATCH --exclude=vine5,vine6,vine7,vine8,vine9,vine10,vine11,vine12,vine13,vine14
+#SBATCH --exclude=vine3,vine5,vine6,vine7,vine8,vine9,vine10,vine11,vine12,vine13,vine14
 
 #################
 #number of nodes you are requesting
