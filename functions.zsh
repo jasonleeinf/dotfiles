@@ -20,7 +20,8 @@ function scr() {
 function sint() {
     if [ "$(whoami)" = "yunjae" ]; 
     then
-        srun --time=168:00:00 --qos=interactive --gres=gpu:1 --constraint=gpu_12gb --pty zsh
+        srun --time=168:00:00 --mem=20000 --qos=interactive --exclude=vine3,vine5,vine6,vine7,vine8,vine9,vine10,vine11,vine12,vine13,vine14 --gres=gpu:1 --constraint=gpu_12gb --pty zsh
+        
     elif [ "$(whoami)" = "yl1363" ];
     then
         srun --time=168:00:00 --mem=10000 --exclude=gpu-61,gpu-63,gpu-35 --gres=gpu:p40:1 --pty /usr/bin/zsh
