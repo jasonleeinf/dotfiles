@@ -6,11 +6,25 @@ case "$(uname)" in
         alias ls='ls -G' ;;
 esac
 
+alias display="python -m http.server"
+
 #DECODE
+alias dec_wmt16_enro="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 40000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt16-enro --debug"
+
+alias dec_wmt16_enro_="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 40000 --mode test --remove_repeats --ffw_block highway --dataset wmt16-enro --debug"
+
+alias dec_wmt16_roen="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 40000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt16-roen --debug"
+
 alias dec_iwslt_ende="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params small --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset iwslt-ende --debug"
+
+alias dec_temp="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params small --mode test --remove_repeats --ffw_block highway --dataset iwslt-ende --debug"
+
 alias dec_iwslt_deen="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params small --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset iwslt-deen --debug"
 
 alias dec_wmt15_ende="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 60000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt15-ende --debug"
+
+alias dec_temp2="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 60000 --mode test --remove_repeats --ffw_block highway --dataset wmt15-ende --debug"
+
 alias dec_wmt15_deen="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 60000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt15-deen --debug"
 
 #SLURM
