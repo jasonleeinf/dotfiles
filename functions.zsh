@@ -2,6 +2,18 @@ function ltx {
         pdflatex $1; bibtex $1; pdflatex $1; pdflatex $1; open "$1.pdf"
 }
 
+function sl() {
+    ssh -L "$1":localhost:"$1" "$2"
+}
+
+function killport() {
+    fuser -k "$1"/tcp
+}
+
+function tb() {
+    tensorboard --port="$1" --logdir="$2"
+}
+
 function scr() {
     if [ "$(whoami)" = "yunjae" ]; 
     then

@@ -8,6 +8,8 @@ esac
 
 alias display="python -m http.server"
 
+alias scr="cd ~/scratch"
+
 #DECODE
 alias dec_wmt16_enro="python /scratch/yl1363/nonauto-neural-gpu/transformer_jt/run.py --main_path /scratch/yl1363/nonauto-neural-gpu/transformer_jt --fast --use_argmax --next_dec_input both --load_vocab --params big --vocab_size 40000 --mode test --valid_repeat_dec 20 --remove_repeats --ffw_block highway --dataset wmt16-enro --debug"
 
@@ -50,6 +52,7 @@ alias python_ipdb="python -m ipdb"
 alias sb_cs="sbatch ~/dotfiles/run_cassio.sh"
 
 #SSH
+alias sd='ssh devfair221'
 alias sp='ssh prince'
 alias sp0='ssh prince0'
 alias sp1='ssh prince1'

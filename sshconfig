@@ -1,3 +1,14 @@
+# this allows `ssh devfair` or `et devfair:8080 -t="1234:22,8888:8888,9090:9090" -jport=8080`
+Host *-fairjmp*
+    IdentityFile ~/.ssh/fb_id_rsa
+
+Host devfair*
+    IdentityFile ~/.ssh/fb_id_rsa
+    ProxyJump frc-fairjmp01
+
+Host devfair221
+    Hostname 100.97.69.163
+
 Host cs
 	Hostname cassio.cs.nyu.edu
     User yunjae
