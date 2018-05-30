@@ -11,6 +11,11 @@ if [[ $(whoami) == "yl1363" ]]; then
     alias python=python3
     alias pip=pip3
     export SCR=/home/yl1363/scratch
+elif [[ $(whoami) == "jasonleeinf" ]]; then
+    source /etc/profile
+    module purge
+    module load cuda/9.0
+    module load cudnn/v7.0-cuda.9.0
 else
 	MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
     export SCR=/misc/kcgscratch1/ChoGroup/jason

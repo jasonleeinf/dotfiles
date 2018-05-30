@@ -6,7 +6,7 @@ function sl() {
     ssh -L "$1":localhost:"$1" "$2"
 }
 
-function killport() {
+function kp() {
     fuser -k "$1"/tcp
 }
 
