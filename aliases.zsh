@@ -8,11 +8,20 @@ esac
 
 alias display="python -m http.server"
 
-alias scr="cd ~/scratch"
+if [[ $(whoami) == "yl1363" ]]; then
+    alias scr='cd /scratch/yl1363'
+    alias cpt='cd /scratch/yl1363'
+elif [[ $(whoami) == "jasonleeinf" ]]; then
+    alias scr="cd /private/home/jasonleeinf/scratch"
+    alias cpt="cd /checkpoint/jasonleeinf"
+elif [[ $(whoami) == "yunjae" ]]; then
+    alias scr="cd /misc/kcgscratch1/ChoGroup/jason"
+    alias cpt="cd /misc/kcgscratch1/ChoGroup/jason"
+fi
 
 #SLURM
 alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
-alias sq="squeue -l --format='%.9i %.9q %.40j %.13u %.9b %.6D %.6N %.15L'"
+alias sq="squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
 alias sq40="sq | grep gpu:p40"
 alias sq100="sq | grep gpu:p100"

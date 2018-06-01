@@ -10,7 +10,6 @@ if [[ $(whoami) == "yl1363" ]]; then
     module load pytorch/python3.6/0.3.0_4
     alias python=python3
     alias pip=pip3
-    export SCR=/home/yl1363/scratch
 elif [[ $(whoami) == "jasonleeinf" ]]; then
     source /etc/profile
     module purge
