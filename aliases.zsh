@@ -14,6 +14,7 @@ if [[ $(whoami) == "yl1363" ]]; then
 elif [[ $(whoami) == "jasonleeinf" ]]; then
     alias scr="cd /private/home/jasonleeinf/scratch"
     alias cpt="cd /checkpoint/jasonleeinf"
+    alias ct="/usr/bin/ctags-exuberant"
 elif [[ $(whoami) == "yunjae" ]]; then
     alias scr="cd /misc/kcgscratch1/ChoGroup/jason"
     alias cpt="cd /misc/kcgscratch1/ChoGroup/jason"
@@ -23,10 +24,15 @@ fi
 alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
 alias sq="squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
+alias sqj1="watch -n1 \"squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami) | wc -l\""
+alias sqja1="watch -n1 \"squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami) | grep learnfair | wc -l\""
+
 alias sq40="sq | grep gpu:p40"
 alias sq100="sq | grep gpu:p100"
 alias sq40-="sq | grep gpu:p40 | grep gpu-"
 alias sq100-="sq | grep gpu:p100 | grep gpu-"
+
+alias kc="kp 21; kp 22; kp 23; kp 24; kp 25; kp 26; kp 27; kp 28; kp 29"
 
 alias vundle='vim +PluginInstall +qall'
 

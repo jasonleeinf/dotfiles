@@ -11,7 +11,7 @@ function kp() {
 }
 
 function tb() {
-    tensorboard --port="$1" --logdir="$2"
+    export CUDA_VISIBLE_DEVICES=; tensorboard --port="$1" --logdir="$2"
 }
 
 function scr() {

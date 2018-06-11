@@ -197,7 +197,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Yggdroot/indentLine'
-"Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/taglist.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
@@ -225,6 +225,7 @@ filetype plugin indent on    " required
 "------------------------------------------------------------
 
 " Taglist options
+let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
 let Tlist_Auto_Update = 1
 let Tlist_Compact_Format = 0
 let Tlist_Display_Prototype = 0
