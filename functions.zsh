@@ -6,12 +6,12 @@ function sl() {
     ssh -L "$1":localhost:"$1" "$2"
 }
 
-function killport() {
+function kp() {
     fuser -k "$1"/tcp
 }
 
 function tb() {
-    tensorboard --port="$1" --logdir="$2"
+    export CUDA_VISIBLE_DEVICES=; tensorboard --port="$1" --logdir="$2"
 }
 
 function scr() {

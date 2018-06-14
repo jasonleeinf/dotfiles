@@ -225,6 +225,14 @@ filetype plugin indent on    " required
 "------------------------------------------------------------
 
 " Taglist options
+let hostname = substitute(system('hostname'), '\n', '', '')
+if hostname == "jasonleeinf-mbp"
+    let Tlist_Ctags_Cmd="/Users/jasonleeinf/pkg/ctags-5.8/ctags"
+else
+    let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
+endif
+
+"let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
 let Tlist_Auto_Update = 1
 let Tlist_Compact_Format = 0
 let Tlist_Display_Prototype = 0
