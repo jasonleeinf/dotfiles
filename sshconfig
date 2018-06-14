@@ -1,6 +1,26 @@
 # this allows `ssh devfair` or `et devfair:8080 -t="1234:22,8888:8888,9090:9090" -jport=8080`
-Host devfair221
+Host *-fairjmp*
+    IdentityFile ~/.ssh/fb_id_rsa
+
+Host devfair*
+    IdentityFile ~/.ssh/fb_id_rsa
+    ProxyJump frc-fairjmp01
+
+Host devfair
     Hostname 100.97.69.163
+
+Host devfairtb
+    Hostname 100.97.69.163
+    LocalForward 1990 localhost:1990
+    LocalForward 1991 localhost:1991
+    LocalForward 1992 localhost:1992
+    LocalForward 1993 localhost:1993
+    LocalForward 1994 localhost:1994
+    LocalForward 1995 localhost:1995
+    LocalForward 1996 localhost:1996
+    LocalForward 1997 localhost:1997
+    LocalForward 1998 localhost:1998
+    LocalForward 1999 localhost:1999
 
 Host cs
 	Hostname cassio.cs.nyu.edu

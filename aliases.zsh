@@ -6,6 +6,8 @@ case "$(uname)" in
         alias ls='ls -G' ;;
 esac
 
+alias gcc="/usr/local/bin/gcc-4.9"
+
 alias display="python -m http.server"
 
 #alias du="du -h --max-depth=1 | sort -hr"
@@ -14,9 +16,14 @@ if [[ $(whoami) == "yl1363" ]]; then
     alias scr='cd /scratch/yl1363'
     alias cpt='cd /scratch/yl1363'
 elif [[ $(whoami) == "jasonleeinf" ]]; then
-    alias scr="cd /private/home/jasonleeinf/scratch"
-    alias cpt="cd /checkpoint/jasonleeinf"
-    alias ct="/usr/bin/ctags-exuberant"
+    if [[ $(hostname) == "jasonleeinf-mbp" ]]; then
+        alias scr="cd /Users/jasonleeinf/scratch"
+        alias ct="/usr/bin/ctags"
+    else;
+        alias scr="cd /private/home/jasonleeinf/scratch"
+        alias cpt="cd /checkpoint/jasonleeinf"
+        alias ct="/usr/bin/ctags-exuberant"
+    fi
 elif [[ $(whoami) == "yunjae" ]]; then
     alias scr="cd /misc/kcgscratch1/ChoGroup/jason"
     alias cpt="cd /misc/kcgscratch1/ChoGroup/jason"
@@ -46,7 +53,7 @@ alias nasty='find . -name "*.pyc" -print -type f -delete; find . -name "*.swp" -
 alias python_ipdb="python -m ipdb"
 
 #SSH
-alias sd='ssh devfair221'
+alias sd='ssh devfair'
 alias sp='ssh prince'
 alias sp0='ssh prince0'
 alias sp1='ssh prince1'
