@@ -6,6 +6,8 @@ case "$(uname)" in
         alias ls='ls -G' ;;
 esac
 
+alias gcc="/usr/local/bin/gcc-4.9"
+
 alias display="python -m http.server"
 
 alias scr="cd ~/scratch"
@@ -52,7 +54,7 @@ alias python_ipdb="python -m ipdb"
 alias sb_cs="sbatch ~/dotfiles/run_cassio.sh"
 
 #SSH
-alias sd='ssh devfair221'
+alias sd='ssh devfair'
 alias sp='ssh prince'
 alias sp0='ssh prince0'
 alias sp1='ssh prince1'
