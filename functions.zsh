@@ -10,6 +10,10 @@ function kp() {
     fuser -k "$1"/tcp
 }
 
+function kpa() {
+    for i in $(seq 1990 2010); do kp $i; done
+}
+
 function tb() {
     export CUDA_VISIBLE_DEVICES=; tensorboard --port="$1" --logdir="$2"
 }

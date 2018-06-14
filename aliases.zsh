@@ -8,6 +8,8 @@ esac
 
 alias display="python -m http.server"
 
+#alias du="du -h --max-depth=1 | sort -hr"
+
 if [[ $(whoami) == "yl1363" ]]; then
     alias scr='cd /scratch/yl1363'
     alias cpt='cd /scratch/yl1363'
