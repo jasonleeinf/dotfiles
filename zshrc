@@ -3,6 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.utf-8 
 export LANG="$LC_ALL" 
+export TZ=US/Eastern
 
 # Slurm
 if [[ $(whoami) == "yl1363" ]]; then

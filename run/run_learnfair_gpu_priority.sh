@@ -14,7 +14,8 @@
 
 #################
 # --gres will give you one GPU, you can ask for more, up to 8 (or how ever many are on the node/card)
-#SBATCH --gres=gpu:p40:1
+#SBATCH --gres=gpu:1
+#SBATCH --partition=priority
 
 #################
 #number of nodes you are requesting

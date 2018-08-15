@@ -1,16 +1,11 @@
 # this allows `ssh devfair` or `et devfair:8080 -t="1234:22,8888:8888,9090:9090" -jport=8080`
-Host *-fairjmp*
-    IdentityFile ~/.ssh/fb_id_rsa
-
-Host devfair*
-    IdentityFile ~/.ssh/fb_id_rsa
-    ProxyJump frc-fairjmp01
-
 Host devfair
-    Hostname 100.97.69.163
+    #Hostname 100.97.69.163
+    Hostname 100.97.17.99
 
 Host devfairtb
-    Hostname 100.97.69.163
+    #Hostname 100.97.69.163
+    Hostname 100.97.17.99
     LocalForward 1990 localhost:1990
     LocalForward 1991 localhost:1991
     LocalForward 1992 localhost:1992

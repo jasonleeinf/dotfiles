@@ -160,9 +160,6 @@ nmap <c-j> :wincmd h<CR>
 nmap <C-h> gT
 nmap <C-l> gt
 
-" json hide
-set conceallevel=0
-
 function! GotoJump()
   jumps
   let j = input("Please select your jump: ")

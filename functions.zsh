@@ -10,6 +10,17 @@ function kp() {
     fuser -k "$1"/tcp
 }
 
+function clean() {
+    for var in "$@"
+    do
+        rm -rfI event/"$var"
+        rm -rfI log/"$var"
+        rm -rfI model/"$var"
+        rm -rfI param/"$var"
+        rm -rfI decoding/"$var"
+    done
+}
+
 function kpa() {
     for i in $(seq 1990 2010); do kp $i; done
 }

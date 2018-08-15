@@ -10,7 +10,7 @@ alias gcc="/usr/local/bin/gcc-4.9"
 
 alias display="python -m http.server"
 
-#alias du="du -h --max-depth=1 | sort -hr"
+alias du="du -h --max-depth=1 | sort -hr"
 
 if [[ $(whoami) == "yl1363" ]]; then
     alias scr='cd /scratch/yl1363'
@@ -31,7 +31,8 @@ fi
 
 #SLURM
 alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
-alias sq="squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L'"
+alias scj="scancel -u jasonleeinf"
+alias sq="squeue -l --format='%.9i %.9q %.50j %.18u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
 alias sqj1="watch -n1 \"squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami) | wc -l\""
 alias sqja1="watch -n1 \"squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami) | grep learnfair | wc -l\""
@@ -48,9 +49,13 @@ alias vundle='vim +PluginInstall +qall'
 alias l='ls -lFh'     #size,show type,human readable
 alias la='ls -lAFh'   #long list,show almost all,show type,human readable
 
-alias nasty='find . -name "*.pyc" -print -type f -delete; find . -name "*.swp" -print -type f -delete; find . -name "*.swo" -print -type f -delete; find . -name "*.py~" -print -type f -delete'
+alias nasty='find . -name "*.pyc" -print -type f -delete; find . -name "*.swp" -print -type f -delete; find . -name "*.swo" -print -type f -delete; find . -name "*.py~" -print -type f -delete; find . -name "*.nfs*"'
 
 alias python_ipdb="python -m ipdb"
+
+alias dy_ipdb="python -m ipdb run.py --dynet-autobatch 1 --dynet-gpu --dynet-mem 10000"
+
+alias dy="python run.py --dynet-autobatch 1 --dynet-gpu --dynet-mem 10000"
 
 #SSH
 alias sd='ssh devfair'
@@ -95,8 +100,8 @@ alias -g .....='cd ../../../../'   #cd .....
 alias cnt='ls -1 | wc -l'
 
 # Make some possibly destructive commands more interactive.
-alias rm='rm -iv'
-alias rd='rm -irv'
+alias rm='rm -Iv'
+alias rd='rm -Irv'
 alias mv='mv -iv'
 alias cp='cp -iv'
 
