@@ -52,3 +52,5 @@ plugins=(git colored-man-pages colorize cp rsync safe-paste vundle brew)
 [ -e ~/.zsh/custom.zsh ] && . ~/.zsh/custom.zsh
 
 umask 002
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

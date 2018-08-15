@@ -7,10 +7,22 @@ Host devfair*
     ProxyJump frc-fairjmp01
 
 Host devfair
-    Hostname 100.97.69.163
+    #Hostname 100.97.69.163
+    Hostname 100.97.17.99
 
 Host devfairtb
-    Hostname 100.97.69.163
+    Hostname 100.97.17.99
+    #Hostname 100.97.69.163
+    LocalForward 1980 localhost:1980
+    LocalForward 1981 localhost:1981
+    LocalForward 1982 localhost:1982
+    LocalForward 1983 localhost:1983
+    LocalForward 1984 localhost:1984
+    LocalForward 1985 localhost:1985
+    LocalForward 1986 localhost:1986
+    LocalForward 1987 localhost:1987
+    LocalForward 1988 localhost:1988
+    LocalForward 1989 localhost:1989
     LocalForward 1990 localhost:1990
     LocalForward 1991 localhost:1991
     LocalForward 1992 localhost:1992
@@ -21,12 +33,16 @@ Host devfairtb
     LocalForward 1997 localhost:1997
     LocalForward 1998 localhost:1998
     LocalForward 1999 localhost:1999
-
-Host cs
-	Hostname cassio.cs.nyu.edu
-    User yunjae
-	ForwardX11 yes
-	ForwardX11Trusted yes
+    LocalForward 2000 localhost:2000
+    LocalForward 2001 localhost:2001
+    LocalForward 2002 localhost:2002
+    LocalForward 2003 localhost:2003
+    LocalForward 2004 localhost:2004
+    LocalForward 2005 localhost:2005
+    LocalForward 2006 localhost:2006
+    LocalForward 2007 localhost:2007
+    LocalForward 2008 localhost:2008
+    LocalForward 2009 localhost:2009
 
 Host dev
     HostName devvm160.frc2.facebook.com
@@ -72,6 +88,12 @@ Host hpc
     User yl1363
     ForwardX11 yes
     ForwardX11Trusted yes
+
+Host cs
+	Hostname cassio.cs.nyu.edu
+    User yunjae
+	ForwardX11 yes
+	ForwardX11Trusted yes
 
 Host nyu
     HostName access.cims.nyu.edu
