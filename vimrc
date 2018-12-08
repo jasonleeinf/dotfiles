@@ -136,8 +136,9 @@ map <F7> :set nowrap<CR>
 map - dd
 map f dd
  
-let g:indentLine_char = ' '
 let g:LargeFile=10
+let g:indentLine_enabled = 1
+let g:indentLine_char = '|'
 
 :set shortmess=a
 
@@ -146,6 +147,7 @@ set t_Co=256
 
 " Toggle NERDTREE
 map <F10> :NERDTreeToggle<CR>
+map <F6> :IndentLinesToggle<CR>
 
 map <F1> :tabmove 
 
@@ -193,7 +195,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Yggdroot/indentLine'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-surround'
@@ -203,6 +204,7 @@ Plugin 'ahw/vim-pbcopy'
 Plugin 'craigemery/vim-autotag'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -223,13 +225,8 @@ filetype plugin indent on    " required
 
 " Taglist options
 let hostname = substitute(system('hostname'), '\n', '', '')
-if hostname == "jasonleeinf-mbp"
-    let Tlist_Ctags_Cmd="/Users/jasonleeinf/pkg/ctags-5.8/ctags"
-else
-    let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
-endif
+let Tlist_Ctags_Cmd="/private/home/jasonleeinf/pkg/ctags-5.8/ctags"
 
-"let Tlist_Ctags_Cmd="/usr/bin/ctags-exuberant"
 let Tlist_Auto_Update = 1
 let Tlist_Compact_Format = 0
 let Tlist_Display_Prototype = 0

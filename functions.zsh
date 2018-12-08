@@ -22,7 +22,7 @@ function clean() {
 }
 
 function kpa() {
-    for i in $(seq 1990 2010); do kp $i; done
+    for i in $(seq 1980 2010); do kp $i; done
 }
 
 function tb() {

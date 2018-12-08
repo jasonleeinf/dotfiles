@@ -18,9 +18,11 @@ if [[ $(whoami) == "yl1363" ]]; then
 elif [[ $(whoami) == "jasonleeinf" ]]; then
     if [[ $(hostname) == "jasonleeinf-mbp" ]]; then
         alias scr="cd /Users/jasonleeinf/scratch"
+        alias dat="cd /Users/jasonleeinf/corpora"
         alias ct="/usr/bin/ctags"
     else;
         alias scr="cd /private/home/jasonleeinf/scratch"
+        alias dat="cd /private/home/jasonleeinf/corpora"
         alias cpt="cd /checkpoint/jasonleeinf"
         alias ct="/usr/bin/ctags-exuberant"
     fi
@@ -32,10 +34,9 @@ fi
 #SLURM
 alias sinfo="sinfo -o --long --Node --format='%.6N %.8T %.4c %.10m %.20f'"
 alias scj="scancel -u jasonleeinf"
-alias sq="squeue -l --format='%.9i %.9q %.50j %.18u %.9b %.6D %.6N %.15L'"
+alias sq="squeue -l --format='%.9i %.9P %.9q %.50j %.18u %.9b %.6D %.6N %.15L'"
 alias sqj="sq | grep $(whoami)"
-alias sqj1="watch -n1 \"squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami) | wc -l\""
-alias sqja1="watch -n1 \"squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami) | grep learnfair | wc -l\""
+alias sqja="squeue -l --format='%.9i %.9q %.40j %.18u %.9b %.6D %.6N %.15L' | grep $(whoami)"
 
 alias sq40="sq | grep gpu:p40"
 alias sq100="sq | grep gpu:p100"

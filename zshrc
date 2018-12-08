@@ -17,6 +17,7 @@ elif [[ $(whoami) == "jasonleeinf" ]]; then
         module purge
         module load cuda/9.0
         module load cudnn/v7.0-cuda.9.0
+        module load tmux
     fi
 elif [[ $(whoami) == "yunjae" ]]; then
 	MODULEPATH=$MODULEPATH:/usr/local/etc/modulefiles
