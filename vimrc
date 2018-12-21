@@ -137,7 +137,7 @@ map - dd
 map f dd
  
 let g:LargeFile=10
-let g:indentLine_enabled = 1
+let g:indentLine_enabled = 0
 let g:indentLine_char = '|'
 
 :set shortmess=a
