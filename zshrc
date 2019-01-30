@@ -9,8 +9,8 @@ export TZ=US/Eastern
 if [[ $(whoami) == "yl1363" ]]; then
 	source /opt/ohpc/admin/lmod/lmod/init/zsh
     module load pytorch/python3.6/0.3.0_4
-    alias python=python3
-    alias pip=pip3
+    #alias python=python3
+    #alias pip=pip3
 elif [[ $(whoami) == "jasonleeinf" ]]; then
     if [[ $(hostname) != "jasonleeinf-mbp" ]]; then
         source /etc/profile
